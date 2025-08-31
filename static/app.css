@@ -1,0 +1,90 @@
+body { 
+  font-family: Arial, sans-serif; 
+  background: #f3f6fb; 
+  color: #222; 
+  margin: 12px; 
+}
+
+.header { 
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between; 
+  margin-bottom:10px; 
+}
+
+.header h1 { 
+  margin:0; 
+  color:#1967d2; 
+}
+
+.table { 
+  display: flex;
+  flex-direction: column;
+  width: 100%;              /* force table to full width */
+  background:white; 
+  border-radius:8px; 
+  box-shadow:0 2px 6px rgba(0,0,0,0.08); 
+  overflow:hidden; 
+}
+
+.row { 
+  display:flex; 
+  flex:1;                   /* rows also stretch */
+  border-bottom:1px solid #eef2f6; 
+  align-items:center; 
+}
+
+.header-row { 
+  background:#1976d2; 
+  color:white; 
+  font-weight:700; 
+}
+
+.cell { 
+  padding:8px 12px; 
+  flex:1;                   /* default: each column flexible */
+}
+
+/* Fix widths for key columns */
+.app-col { flex: 0 0 160px; }
+.health-col { flex: 0 0 160px; }
+.alerts-col { flex: 0 0 260px; }
+.tickets-col { flex: 0 0 120px; }
+.dt-col { flex: 0 0 260px; }
+
+/* Release col auto-stretches */
+.release-col { flex: 1; }
+
+/* Status chips */
+.green { 
+  background:#2ecc71; 
+  color:white; 
+  padding:6px 10px; 
+  border-radius:16px; 
+  display:inline-block; 
+}
+.orange { 
+  background:#f39c12; 
+  color:white; 
+  padding:6px 10px; 
+  border-radius:16px; 
+  display:inline-block; 
+}
+.red { 
+  background:#e74c3c; 
+  color:white; 
+  padding:6px 10px; 
+  border-radius:16px; 
+  display:inline-block; 
+}
+
+/* Alert badges */
+.badge { 
+  display:inline-block; 
+  padding:6px 10px; 
+  border-radius:8px; 
+  margin-right:6px; 
+  min-width:44px; 
+  text-align:center; 
+}
+
